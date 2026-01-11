@@ -1,0 +1,11 @@
+secret_word = "program"
+
+letter = input("Enter a letter: ")
+
+if len(letter) == 1 and letter.isalpha():
+    if letter.lower() in secret_word.lower():
+        print("The letter is in the secret word.")
+    else:
+        print("The letter is not in the secret word.")
+else:
+    print("Invalid input. Enter exactly one letter.")
